@@ -47,9 +47,7 @@ struct MeetingHeaderView: View {
         .padding([.top, .horizontal])    }
 }
 
-struct MeetingHeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180, theme: .bubblegum)
-            .previewLayout(.sizeThatFits)
-    }
+#Preview {
+    MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180, theme: .bubblegum)
+        .previewLayout(.sizeThatFits)
 }

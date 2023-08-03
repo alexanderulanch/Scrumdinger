@@ -8,6 +8,7 @@
 import Foundation
 
 struct DailyScrum: Identifiable {
+    let id: UUID
     var title: String
     var attendees: [Attendee]
     var lengthInMinutes: Int
@@ -20,7 +21,7 @@ struct DailyScrum: Identifiable {
         }
     }
     var theme: Theme
-    var id: UUID
+    var history: [History] = []
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
             self.id = id
